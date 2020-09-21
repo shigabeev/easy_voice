@@ -5,7 +5,7 @@ from scipy.io import wavfile
 
 from asr import recognize # voice recognition API
 from tts import pronounce # text-to-speech API
-from chatbot import SmallTalk # Smalltalk API
+from chatbot import SmallTalkAgent # Smalltalk API
 
 from utils import write_result
 
@@ -25,7 +25,7 @@ def play_audio(sr, wav):
 
 
 if __name__ == "__main__":
-    bot = SmallTalk()
+    bot = SmallTalkAgent()
 
     for _ in range(10):
         play(tink)

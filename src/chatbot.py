@@ -5,8 +5,8 @@ import torch
 tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
 model = AutoModelWithLMHead.from_pretrained("microsoft/DialoGPT-medium")
 
-class SmallTalk:
-    """ Keep conversation going """
+class SmallTalkAgent:
+    """ Keeps conversation going """
 
     def __init__(self, model=model, tokenizer=tokenizer):
         self.tokenizer = tokenizer

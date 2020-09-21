@@ -1,6 +1,8 @@
 torch==1.6.0
 espnet==0.9.2
 parallel_wavegan==0.4.6
-deepspeech
+transformers==3.1.0
+deepspeech==0.8.2
 pyaudio
 pydub
+
